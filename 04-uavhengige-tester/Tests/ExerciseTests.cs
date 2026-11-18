@@ -43,6 +43,8 @@ public class ExerciseTests
         bay.TryAdd("luft?");
 
         Assert.Equal(3, bay.Count);
+
+        //testen feiler da constructor bare tillater at beholderen skal kunne lagre 2 items? 
     }
     [Fact]
     public void Constructor_MakesTwo_OneGetsItem_SecondEmpty()
