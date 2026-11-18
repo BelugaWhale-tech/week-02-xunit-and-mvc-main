@@ -16,7 +16,7 @@ public class ExerciseTests
         // Assert
         Assert.Equal(24, actual);
     }
-    // TODO: Skriv to selvstendige Fact-tester.
+    
     [Fact]
     public void Calculate_ZeroCrewFourDays_ReturnsZero()
     {
