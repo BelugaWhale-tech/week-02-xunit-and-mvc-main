@@ -44,4 +44,16 @@ public class ExerciseTests
 
         Assert.Equal(3, bay.Count);
     }
+    [Fact]
+    public void Constructor_MakesTwo_OneGetsItem_SecondEmpty()
+    {
+        // Given
+         var bayI = new CargoBay();
+         var bayII= new CargoBay();
+        // When
+        bayI.TryAdd("Deftones");
+        // Then
+        Assert.Equal(1, bayI.Count);
+        Assert.Equal(0, bayII.Count);
+    }
 }
