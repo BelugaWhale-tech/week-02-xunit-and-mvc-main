@@ -19,17 +19,23 @@ Hvordan fant du frem til de forventede resultatene?= gjorde matte.
 Endre multiplikatoren fra 2 til 3, og kjør programmet på nytt.
 
 **Hvilke tilfeller avslørte feilen?**
+I, IV og V avlører feil. 
 
 **Hvilke tilfeller ga fortsatt riktig resultat?**
+tilfeller II og III gir fortsatt riktig resultat
 
 **Hvorfor kan nulltilfellene gi riktig resultat selv om multiplikatoren er feil?**
+Nulltilfellene gir fortsatt riktig siden når man ganger med 0 så blir resultatet 0 
 
 Husk å endre multiplikatoren tilbake til 2.
 
 ## 3. Refleksjon
 
 Hvorfor er det ikke nok at programmet skriver ut et resultat for å avgjøre om en test består?
+som vi ser her, kan nultilfeller fortsatt gi forventet resultat selvom det er feil i utregningen, derfor viktig å kjøre flere tester med samme utregningsmetode for å sikkre oss riktig resultat
 
 ## 4. Endringer
 
 Hvilke filer endret du, og hvorfor?
+
+i program.cs endret jeg variabel navn for bedre oversikt og la til flere cases.(?)
