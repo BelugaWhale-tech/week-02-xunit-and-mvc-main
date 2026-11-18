@@ -13,6 +13,10 @@ endre til <= skal fikse problemet.
 
 Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ---|---|---|---
+|inlinedata (1, 4, true);| forventer at testen passerer.| testen passerer| 
+|inlinedata (3, 4, true);   forventer at testen passerer.| testen passerer| 
+|inlinedata (4, 4, true);| forventer at testen passerer. | testen passerer ikke. expected true, actual false. 
+|
 
 
 ## Etterpå
