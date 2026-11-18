@@ -22,5 +22,9 @@ Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ## Etterpå
 
 Hvilke filer endret jeg, og hvorfor?
-
 Svar på refleksjonsspørsmålene:
+i SeatPolicy.cs endret jeg |return requested > 0 && requested < available;| til |return requested > 0 && requested <= available;
+det gjorde så sammenlignigns opratøren gikk fra "less then" til "less then or equal to " som gjør at testen passerer og koden er riktig.
+
+
+
