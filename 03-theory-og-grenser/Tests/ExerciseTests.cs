@@ -27,6 +27,7 @@ public class ExerciseTests
     public void CanReserve_ReturnsExpectedDecisions(int requested, int available, bool expected)
     {
         bool actual = SeatPolicy.CanReserve(requested, available);
+        Assert.Equal(expected, actual);
     }
 
 }
