@@ -12,6 +12,7 @@ Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 |bay.tryadd("mat");| legger til mat i beholder.| legger til mat i beholder, count er 1| 
 bay.tryadd("Mat") bay.tryadd("vann")| legger til to objekter i beholder, count skal være to| legger til objekter og count er 2|
 |bay.tryadd("mat"); ("vann"); ("luft");| legger til tre objekter i listen, testen skal feile da det er kun plass til to objekter i beholderen.| test feiler, expected: 3 actual: 2
+|Constructor_MakesTwo_OneGetsItem_SecondEmpty| lager to beholdere, legger til _item i en av dem, leser av at kun den ene har fått innhold| leser av, en beholder innholder _item mens den andre er tom|
 
 
 
