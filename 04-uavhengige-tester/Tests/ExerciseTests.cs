@@ -23,4 +23,15 @@ public class ExerciseTests
         // Then
         Assert.Equal(1, bay.Count);
     }
+    [Fact]
+    public void Constructor_StartsEmpty_AddTwoItems()
+    {
+        // Given
+        var bay = new CargoBay();
+        // When
+        bay.TryAdd("Mat");
+        bay.TryAdd("Vann");
+        // Then
+        Assert.Equal(2, bay.Count);
+    }
 }
