@@ -6,13 +6,13 @@ Fyll inn **Forventet** før du kjører programmet. Etter at du har kjørt alle f
 
 | Inndata | Forventet | Faktisk | Stemte det? |
 |---|---|---|---|
-| 3 personer, 4 dager | | | |
-| 0 personer, 4 dager | | | |
-| 3 personer, 0 dager | | | |
-| 1 person, 1 dag | | | |
-| 20 personer, 30 dager | | | |
+| 3 personer, 4 dager |forventet 24 forsyningsenheter |faktisk 24 forsyningsenheter |det stemte med forventninger |
+| 0 personer, 4 dager |forventet 0 forsyningsenheter  |faktisk 0 forsyningsenheter |det stemte med forventinger |
+| 3 personer, 0 dager |forventet 0 forsyningsenheter  |faktisk 0 forsyningsenheter | det stemte med forventninger|
+| 1 person, 1 dag     |forventet 2 forsyningsenheter   |faktisk 2 forsyningsenheter |det stemte med forventnigner |
+| 20 personer, 30 dager |forventet 1200 forsyningsenheter |faktisk 1200 forsyningsenheter |det stemte med forventninger|
 
-Hvordan fant du frem til de forventede resultatene?
+Hvordan fant du frem til de forventede resultatene?= gjorde matte.
 
 ## 2. Prøv å innføre en feil
 
