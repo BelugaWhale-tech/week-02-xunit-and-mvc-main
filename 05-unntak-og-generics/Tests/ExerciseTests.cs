@@ -61,6 +61,7 @@ public class ExerciseTests
         // When
         var stringPop = stack.Pop();
         Assert.Equal("Magic", stringPop);
+        Assert.Equal(0, stack.Count);
         stack.Push("Gathering");
         // Then
         Assert.Equal(1, stack.Count);
