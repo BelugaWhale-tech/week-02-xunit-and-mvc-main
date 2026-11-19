@@ -19,7 +19,7 @@ public class ExerciseTests
         // Given
         var bay = new CargoBay();
         // When
-        bay.TryAdd("Mat");
+        Assert.True(bay.TryAdd("Mat"));
         // Then
         Assert.Equal(1, bay.Count);
     }
@@ -29,8 +29,8 @@ public class ExerciseTests
         // Given
         var bay = new CargoBay();
         // When
-        bay.TryAdd("Mat");
-        bay.TryAdd("Vann");
+        Assert.True(bay.TryAdd("Mat"));
+        Assert.True(bay.TryAdd("Vann"));
         // Then
         Assert.Equal(2, bay.Count);
     }
@@ -40,9 +40,10 @@ public class ExerciseTests
         var bay = new CargoBay();
         bay.TryAdd("Mat");
         bay.TryAdd("vann");
-        bay.TryAdd("luft?");
+        
+        Assert.False(bay.TryAdd("luft")); //sjekker at luft IKKE blir lagt til.
 
-        Assert.Equal(3, bay.Count);
+        Assert.Equal(2, bay.Count);
 
         //testen feiler da constructor bare tillater at beholderen skal kunne lagre 2 items? 
     }
@@ -57,5 +58,6 @@ public class ExerciseTests
         // Then
         Assert.Equal(1, bayI.Count);
         Assert.Equal(0, bayII.Count);
+        
     }
 }
