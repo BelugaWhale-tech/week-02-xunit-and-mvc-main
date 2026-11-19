@@ -50,6 +50,6 @@ public class ExerciseTests
         var intPopped = stack.Pop();
         // Then
         Assert.Equal(7, intPopped);
-        Assert.Equal(1, stack.Count);
+        Assert.Equal(0, stack.Count);
     }
 }
