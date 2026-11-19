@@ -33,6 +33,19 @@ public class ExerciseTests
 
         Assert.Equal("Elfs", itemPoppedII);
         Assert.Equal(1, stack.Count);
-        //pop fjerner item fra stack, så count her er 2, test for å sjekke om pop faktisk fjerner fra stack? 
+        
+    }
+    [Fact]
+    public void AddInt_PopStackAndWhatNot()
+    {
+        // Given
+        var stack = new CargoStack<int>();
+        stack.Push (1);
+        stack.Push (2);
+        // When
+        var intPopped = stack.Pop();
+        // Then
+        Assert.Equal(2, intPopped);
+        Assert.Equal(1, stack.Count);
     }
 }
