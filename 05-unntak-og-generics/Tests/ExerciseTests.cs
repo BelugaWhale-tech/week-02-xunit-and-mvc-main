@@ -28,6 +28,11 @@ public class ExerciseTests
         // Then
         Assert.Equal("Trolls", itemPopped);
         Assert.Equal(2,stack.Count);
+
+        var itemPoppedII = stack.Pop();
+
+        Assert.Equal("Elfs", itemPoppedII);
+        Assert.Equal(1, stack.Count);
         //pop fjerner item fra stack, så count her er 2, test for å sjekke om pop faktisk fjerner fra stack? 
     }
 }
