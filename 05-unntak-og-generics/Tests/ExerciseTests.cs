@@ -33,6 +33,11 @@ public class ExerciseTests
 
         Assert.Equal("Elfs", itemPoppedII);
         Assert.Equal(1, stack.Count);
+
+        var itemPoppedIII = stack.Pop();
+
+        Assert.Equal("Gnomes", itemPoppedIII);
+        Assert.Equal(0, stack.Count);
         
     }
     [Fact]
