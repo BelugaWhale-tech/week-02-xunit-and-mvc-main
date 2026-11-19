@@ -14,6 +14,18 @@ public class ExerciseTests
         Assert.Equal(0, stack.Count);
     }
     // TODO: Test LIFO, telling, gjenbruk og en annen type.
+
+    [Fact]
+    public void NewStack_CountZero_EmptyStack()
+    {
+        // Given
+        var stack = new CargoStack<string>();
+        // When
+        Assert.Equal(0, stack.Count);
+    
+        // Then
+    }
+
     [Fact]
     public void AddItems_PopStack()
     {
@@ -65,5 +77,8 @@ public class ExerciseTests
         stack.Push("Gathering");
         // Then
         Assert.Equal(1, stack.Count);
+        var stringPopII = stack.Pop();
+        Assert.Equal("Gathering", stringPopII);
+        Assert.Equal(0, stack.Count);
     }
 }
