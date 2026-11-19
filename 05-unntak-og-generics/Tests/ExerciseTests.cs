@@ -25,6 +25,6 @@ public class ExerciseTests
         stack.Pop();
         // Then
         Assert.Equal(3,stack.Count);
-        
+        //pop fjerner item fra stack, så count her er 2, test for å sjekke om pop faktisk fjerner fra stack? 
     }
 }
