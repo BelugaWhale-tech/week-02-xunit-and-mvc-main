@@ -13,4 +13,18 @@ public class ExerciseTests
         Assert.Equal(0, stack.Count);
     }
     // TODO: Test LIFO, telling, gjenbruk og en annen type.
+    [Fact]
+    public void AddItems_PopStack()
+    {
+        // Given
+        var stack = new CargoStack<string>();
+        stack.Push("Gnomes");
+        stack.Push("Elfs");
+        stack.Push("Trolls");
+        // When
+        stack.Pop();
+        // Then
+        Assert.Equal(3,stack.Count);
+        
+    }
 }
