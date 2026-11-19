@@ -52,4 +52,17 @@ public class ExerciseTests
         Assert.Equal(7, intPopped);
         Assert.Equal(0, stack.Count);
     }
+    [Fact]
+    public void AddToStack_Pop_AddToStackAgain_Reusability()
+    {
+        // Given
+        var stack = new CargoStack<string>();
+        stack.Push("Magic");
+        // When
+        var stringPop = stack.Pop();
+        Assert.Equal("Magic", stringPop);
+        stack.Push("Gathering");
+        // Then
+        Assert.Equal(1, stack.Count);
+    }
 }
