@@ -45,12 +45,11 @@ public class ExerciseTests
     {
         // Given
         var stack = new CargoStack<int>();
-        stack.Push (1);
-        stack.Push (2);
+        stack.Push (7);
         // When
         var intPopped = stack.Pop();
         // Then
-        Assert.Equal(2, intPopped);
+        Assert.Equal(7, intPopped);
         Assert.Equal(1, stack.Count);
     }
 }
