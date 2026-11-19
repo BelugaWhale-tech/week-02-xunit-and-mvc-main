@@ -23,7 +23,7 @@ public class ExerciseTests
         stack.Push("Elfs");
         stack.Push("Trolls");
         // When
-        stack.Pop();
+        
         var itemPopped = stack.Pop();
         // Then
         Assert.Equal("Trolls", itemPopped);
