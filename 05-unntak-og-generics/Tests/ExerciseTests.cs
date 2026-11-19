@@ -1,5 +1,6 @@
 using Xunit;
 using SpaceAcademy;
+using Xunit.Abstractions;
 
 namespace SpaceAcademy.Tests;
 
@@ -22,9 +23,10 @@ public class ExerciseTests
         stack.Push("Elfs");
         stack.Push("Trolls");
         // When
-        stack.Pop();
+        var itemPopped = stack.Pop();
         // Then
-        Assert.Equal(3,stack.Count);
+        Assert.Equal(2,stack.Count);
+        Assert.Equal("Trolls", itemPopped);
         //pop fjerner item fra stack, så count her er 2, test for å sjekke om pop faktisk fjerner fra stack? 
     }
 }
