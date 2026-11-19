@@ -14,10 +14,15 @@ Pop_EmptyStack_ThrowsInvalidOperationExxception| forventet throwsinvalidoperatio
 ## Etterpå
 
 Hvilke filer endret jeg, og hvorfor?
-i selve testen nå så endrer jeg invalidoperationexception til argumentoutofrangeexception. kanskje kjøre en separat test først for å se om det faktisk fungerer? kjørte ikke separat tekst, endret selve testen og den passerer. ser også at jeg leste oppgaveteksten helt feil og startet på nytt. 
-
+ 
 Jeg la til en if blokk for å sjekke om stacken er tom, om stacken er tom så skal den throwe invalidoperationexception. om den har innhold så skal den opperere som normalt.
 
 Svar på refleksjonsspørsmålene:
+
+1. testen skal kontrollere kravet vi har satt, ikke godta en tilfeldig feil i implementasjonen.
+
+2. Throws kontrollerer at Pop() kaster den forventa unntakstypen. Equal sammenligner verdier, derfor testet vi dette med Throws.
+
+3. samme generisk klasse kan brukes med ulike datatyper. 
 
 
