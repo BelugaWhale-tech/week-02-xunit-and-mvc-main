@@ -8,7 +8,7 @@ public static class LaunchPrice
         
         if (priority)
         {
-            expectedPrice = expectedPrice + Passengers * 20;
+            expectedPrice = expectedPrice + Passengers * 21;
         }
         
         return expectedPrice;
