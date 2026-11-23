@@ -14,4 +14,16 @@ public class ExerciseTests
         Assert.False(task.IsCompleted);
     }
     // TODO: Skriv fullføringstesten før du implementerer Complete.
+    [Fact]
+    public void IsCompleted_IsTrue()
+    {
+        // Given
+        var taskII = new MissionTask(11, "Clean out ooze from vent");
+        // When
+        Assert.Equal(11, taskII.Id);     
+           
+        // Then
+        Assert.True(taskII.IsCompleted);
+    
+    } 
 }
