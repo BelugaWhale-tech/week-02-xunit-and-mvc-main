@@ -11,6 +11,7 @@ i denne oppgaven skal jeg starte med tester før jeg koder, jeg startet her med 
 Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ---|---|---|---
 |IsCompleted_IsTrue| forventer at taskII.IsCompleted skal returnere true| testen feiler og returnerer false. 
+taskII.Complete();| forventer med dette at forrige test passere| testen passerer, taskII.IsCompleted returnerer som true.|
 
 
 ## Etterpå
