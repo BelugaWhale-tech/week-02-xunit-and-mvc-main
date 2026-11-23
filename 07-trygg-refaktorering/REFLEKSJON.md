@@ -20,7 +20,7 @@ Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 Hvilke filer endret jeg, og hvorfor?
 
 endringer i ExerciseTests.cs
-endret også LaunchPrices.cs, bedre leslighet på parametere og variabel. ryddet opp i utregningen for pris.
+endret også LaunchPrice.cs, bedre leslighet på parametere og variabel. ryddet opp i utregningen for pris.
 la til to nye tester for å sjekke maks kapasitet. 
 
 
