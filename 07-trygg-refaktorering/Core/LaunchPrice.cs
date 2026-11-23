@@ -13,9 +13,10 @@ public static class LaunchPrice
         }
         else
         {
-            expectedPrice = Passengers * 100;
+            
+            return expectedPrice;
+            
         }
-        return expectedPrice;
     }
 } // to ting jeg kanskje ser her, int= expectedPrice og den siste utregningen ser ut til å være unødvendig?
 
