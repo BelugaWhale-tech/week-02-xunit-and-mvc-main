@@ -30,7 +30,7 @@ public class ExerciseTests
     } 
 
     [Fact]
-    public void MissionTask_IsCreated()
+    public void MissionTask_IsCreated_IsIncomplete()
     {
         // Given
         var taskIII = new MissionTask(01, "Brew coffe");
@@ -39,5 +39,20 @@ public class ExerciseTests
         Assert.Equal("Brew coffe", taskIII.Title);
         // Then
         Assert.False(taskIII.IsCompleted);
+    }
+
+    [Fact]
+    public void MissionTask_RepetedCompletings()
+    {
+        // Given
+        var TaskIV = new MissionTask(02, "Clean floor");
+        // When
+        TaskIV.Complete();
+        TaskIV.Complete();
+        TaskIV.Complete();
+        TaskIV.Complete();
+        // Then
+        Assert.Equal(02, TaskIV.Id);
+        Assert.Equal("Clean floot", TaskIV.Title);
     }
 }
