@@ -17,7 +17,7 @@ taskII.Complete();| forventer med dette at forrige test passere| testen passerer
 ## Etterpå
 
 Hvilke filer endret jeg, og hvorfor?
-Starter med endringer i MissionTask.cs. selve metodeblokken for Complete er ikke utfylt, det mangler metode.
+Starter med endringer i MissionTask.cs. selve metodeblokken for Complete er ikke utfylt.
 
 Svar på refleksjonsspørsmålene:
 

@@ -1,5 +1,7 @@
 using Xunit;
 using SpaceAcademy;
+using System.Reflection.Metadata;
+using System.Buffers;
 
 namespace SpaceAcademy.Tests;
 
@@ -26,4 +28,16 @@ public class ExerciseTests
         Assert.True(taskII.IsCompleted);
     
     } 
+
+    [Fact]
+    public void MissionTask_IsCreated()
+    {
+        // Given
+        var taskIII = new MissionTask(01, "Brew coffe");
+        // When
+        Assert.Equal(01, taskIII.Id);
+        Assert.Equal("Brew coffe", taskIII.Title);
+        // Then
+        Assert.False(taskIII.IsCompleted);
+    }
 }
