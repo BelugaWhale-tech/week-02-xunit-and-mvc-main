@@ -12,6 +12,7 @@ Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ---|---|---|---
 [InlineData(20, false, 2000)] | Testen passerer  
 [InlineData(20, true, 2400)]  | Testen passerer
+|setter prioritetspris til 21| forventer error da forventet pris regnes med en prioritetsmultiplikator på 20, ikke 21.| 3 tester feiler, alle feiler på at expected er forskjellig fra actual. endrer multiplikatoren tilbake til 20
 
 
 ## Etterpå
