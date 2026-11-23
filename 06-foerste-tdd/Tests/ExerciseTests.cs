@@ -20,8 +20,8 @@ public class ExerciseTests
         // Given
         var taskII = new MissionTask(11, "Clean out ooze from vent");
         // When
-        Assert.Equal(11, taskII.Id);     
-           
+        Assert.Equal(11, taskII.Id); 
+        taskII.Complete();
         // Then
         Assert.True(taskII.IsCompleted);
     
