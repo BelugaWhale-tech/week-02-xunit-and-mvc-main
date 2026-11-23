@@ -10,9 +10,15 @@ for testingen begynner skal jeg utvide koden til å kontrollere det høyeste ant
 
 Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ---|---|---|---
+[InlineData(20, false, 2000)] | Testen passerer  
+[InlineData(20, true, 2400)]  | Testen passerer
+
 
 ## Etterpå
 
 Hvilke filer endret jeg, og hvorfor?
+
+endringer i ExerciseTests.cs, la til to nye tester for å sjekke maks kapasitet. 
+
 
 Svar på refleksjonsspørsmålene:

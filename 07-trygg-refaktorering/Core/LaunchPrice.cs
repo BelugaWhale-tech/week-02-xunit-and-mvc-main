@@ -2,18 +2,18 @@ namespace SpaceAcademy;
 
 public static class LaunchPrice
 {
-    public static int Calculate(int n, bool p)
+    public static int Calculate(int Passengers, bool priority)
     {
-        int x = 0;
-        if (p)
+        int expectedPrice = 0;
+        if (priority)
         {
-            x = n * 100;
-            x = x + n * 20;
+            expectedPrice = Passengers * 100;
+            expectedPrice = expectedPrice + Passengers * 20;
         }
         else
         {
-            x = n * 100;
+            expectedPrice = Passengers * 100;
         }
-        return x;
+        return expectedPrice;
     }
 }
