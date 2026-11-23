@@ -6,7 +6,7 @@ Min forventning og begrunnelse:
 her forventer jeg at tester skal kunne gjennbruke med generics, telle og legge til/fjerne fra stacken med LIFO prinsipper. 
 
 ## Forsøk
-vil legge til at tidlig i denne oppgaven så endret jeg selve throwet til indexoutofrangeexception. forstod i ettertid at det var feil tilnærming og gikk så inn i CargoStack og la til en if block for avvise en tom stack. jeg trur det var riktig.
+vil legge til at tidlig i denne oppgaven så endret jeg selve throwet til indexoutofrangeexception. forstod i ettertid at det var feil tilnærming og gikk så inn i CargoStack og la til en if block for avvise en tom stack. etter det får jeg riktig throw.
 
 Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ---|---|---|---
@@ -28,6 +28,7 @@ Svar på refleksjonsspørsmålene:
 
 2. Throws kontrollerer at Pop() kaster den forventa unntakstypen. Equal sammenligner verdier, derfor testet vi dette med Throws.
 
-3. samme generisk klasse kan brukes med ulike datatyper. 
+3. samme generisk klasse kan brukes med ulike datatyper. ¨
+
 
 
