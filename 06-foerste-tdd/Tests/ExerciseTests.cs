@@ -53,6 +53,7 @@ public class ExerciseTests
         TaskIV.Complete();
         // Then
         Assert.Equal(02, TaskIV.Id);
-        Assert.Equal("Clean floot", TaskIV.Title);
+        Assert.Equal("Clean floor", TaskIV.Title);
+        Assert.True(TaskIV.IsCompleted);
     }
 }
