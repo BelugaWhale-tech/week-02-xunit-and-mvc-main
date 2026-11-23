@@ -14,6 +14,7 @@ CanLaunch returnerer false akkurat nå.
 Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ---|---|---|---
 
+
 ## Etterpå
 
 Hvilke filer endret jeg, og hvorfor?
