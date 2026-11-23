@@ -18,7 +18,12 @@ Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 
 Hvilke filer endret jeg, og hvorfor?
 
-endringer i ExerciseTests.cs, la til to nye tester for å sjekke maks kapasitet. 
+endringer i ExerciseTests.cs, endret beregningene så ikke vi endte opp med noe overføldig. 
+la til to nye tester for å sjekke maks kapasitet. 
 
 
 Svar på refleksjonsspørsmålene:
+før refactor bestod vell alle testene? jeg endret parameterene og variablen i koden for lettere leslighet. testene passerer fortsatt. det ble lettere å forstå etter refactor
+jeg kjørte testene mellom endringene for å forsikre meg om at testene fortsatt passerer. 
+forkjellen på endring og forbedring, ved forbedring så gjorde vi at beregningen mindre kodete? vi flyttet beregning av grunnpris så den ikke regnes flere ganger. hadde vi endret beregningen så ville det nok se veldig anderledes ut. 
+kan en grønn testpakke garantere riktig oppførsel for tilfeller testene ikke undersøker? hvorfor eller hvorfor ikke?: min første tanke er nei, vi kan ikke garantere riktig oppførsel for tester vi ikke undersøker. 
