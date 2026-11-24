@@ -9,6 +9,8 @@ reglene for oppskytning må flyttes til CanLaunch i LaunchPolicy.cs
 her feiler testtilfelle nummer to? testen forventer true men mottar false. 
 CanLaunch returnerer false akkurat nå. 
 
+noterer ned at jeg har testet selve konsollresultatet også. testet med 50/ja 49/ja og 50/nei, den første blir godkjent mens de to siste blir avvist. 
+
 ## Forsøk
 
 Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
