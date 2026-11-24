@@ -75,6 +75,8 @@ public class ExerciseTests
         Assert.True(task.IsCompleted);
         Assert.True(task.IsCompleted);
 
+        Assert.Equal(1, board.Count);
+
     }
     [Fact]
     public void TwoBoards_SeperateChristmases()
