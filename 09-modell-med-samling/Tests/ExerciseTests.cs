@@ -57,6 +57,7 @@ public class ExerciseTests
     {
         var board = new MissionBoard();
     
+        Assert.Equal([], board.GetAll());
         Assert.Equal(0, board.Count);
         
     }
@@ -67,11 +68,13 @@ public class ExerciseTests
         var task = board.Add("Dusting moondust");
 
         Assert.Equal(1,task.Id);    
-        board.Complete(1);
+
+        Assert.True(board.Complete(1));
+        Assert.True(board.Complete(1));
 
         Assert.True(task.IsCompleted);
-
         Assert.True(task.IsCompleted);
+
     }
     [Fact]
     public void TwoBoards_SeperateChristmases()
