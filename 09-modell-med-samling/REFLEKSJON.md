@@ -40,3 +40,12 @@ i missionboard.complete. så endret jeg koden slik at vi itererer gjennom listen
 etter implementasjon så bestod alle testene
 
 assert.same viser at to objekter er samme instanse, brukes i siste testen jeg skrev.
+
+# refleksjonspørsmål
+jeg skal ikke si med 100% sikkerhet, men missionboard burde bruke task sin complete da board har en privat Id,
+
+listekopien fra getall beskytter mot endringer, det er sin egen instanse så endringer i orignalen kommer ikke her, medmindre vi kaller på dem.
+
+equal sjekker om verdiene er like mens same sjekker om begge referansene peker til nøyaktig samme objekt. i test 4 som jeg skrev selv. så sjekker vi at listen fra Getall innholder objektet som add returnerte.
+
+hver test børmopprette eget missionboard så vi ikke ender opp med objekter fra tidligere tester som kan krølle til vår nye test. 
