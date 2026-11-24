@@ -22,6 +22,14 @@ public class MissionBoard
     public bool Complete(int id)
     {
         // TODO: Finn oppdraget og deleger fullføring.
+
+        foreach( var i in _tasks)
+        {
+            if(i = id )
+            {
+                
+            }
+        }
         return false;
     }
 }

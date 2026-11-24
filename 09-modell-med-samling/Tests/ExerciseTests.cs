@@ -52,4 +52,56 @@ public class ExerciseTests
         copy.Clear();
         Assert.Equal(1, board.Count);
     }
+    [Fact]
+    public void NewBoard_IsEmpty()
+    {
+        var board = new MissionBoard();
+    
+        Assert.Equal(0, board.Count);
+        
+    }
+    [Fact]
+    public void SameMission_CompletesTwice()
+    {
+        var board = new MissionBoard();
+        var task = board.Add("Dusting moondust");
+
+        Assert.Equal(1,task.Id);    
+        board.Complete(1);
+
+        Assert.True(task.IsCompleted);
+
+        Assert.True(task.IsCompleted);
+    }
+    [Fact]
+    public void TwoBoards_SeperateChristmases()
+    {
+        // Given
+        var boardI = new MissionBoard();
+        var boardII = new MissionBoard();
+
+        var taskI = boardI.Add("WindowCleaner");
+    
+        // Then
+        Assert.Equal(1, boardI.Count);
+        Assert.Equal(0, boardII.Count);
+
+        var taskII = boardII.Add("Floor remover");
+
+        Assert.Equal(1,taskII.Id);
+    }
+    [Fact]
+    public void ListCopy_ContainsSameasOriginal()
+    {
+        // Given
+        var boardI = new MissionBoard();
+    
+        // When
+        var taskI = boardI.Add("Tire change");
+        var copyBoardI = boardI.GetAll();
+
+    
+        // Then
+        Assert.Same(taskI, copyBoardI[0]);
+    }
 }
