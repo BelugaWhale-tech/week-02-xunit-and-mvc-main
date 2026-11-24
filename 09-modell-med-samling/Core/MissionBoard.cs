@@ -25,11 +25,14 @@ public class MissionBoard
 
         foreach( var i in _tasks)
         {
-            if(i = id )
+            if(i.Id == id )
             {
-                
+                i.Complete();
+                return true;
             }
+            
         }
+    
         return false;
     }
 }
