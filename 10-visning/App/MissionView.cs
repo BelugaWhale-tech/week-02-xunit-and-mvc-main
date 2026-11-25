@@ -23,6 +23,30 @@ public class MissionView
 
     public void ShowTasks(List<MissionTask> tasks)
     {
-        // TODO: Vis tommelding eller alle oppdrag. Ikke endre tasks.
+        string taskStatus = "";
+
+        foreach(MissionTask i in tasks)
+        {
+            
+
+            if(i.IsCompleted == true)
+            {
+                taskStatus  = "Fullført";
+                
+            }
+            else
+            {
+                taskStatus  = "Venter";
+                
+            }
+            
+            Console.WriteLine($"{i.Id}: {i.Title} [{taskStatus}]");
+        }
+
+        if (tasks.Count == 0)
+        {
+            Console.WriteLine("Ingen oppdrag.");
+        }
+        
     }
 }
