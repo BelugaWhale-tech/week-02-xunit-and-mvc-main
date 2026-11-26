@@ -56,6 +56,29 @@ public class MissionController
     private void CompleteTask()
     {
         // TODO: Les ID, tolk tekst, kall modellen, vis resultat.
-        _view.ShowMessage("Fullføring er ikke koblet til ennå.");
+        //Leser og lagrer bruker input i en tekst variabel 
+        string uInput = _view.ReadInput("Skriv inn ID for Oppdrag:");
+
+        //int.TryParse(uInput, out int id);
+        
+        if(int.TryParse(uInput, out int id))
+        {
+
+   
+            if (_board.Complete(id))
+            {
+                
+                _view.ShowMessage($"Oppdrag: {uInput} Fullført");
+            
+            }
+            else
+            {
+                _view.ShowMessage("Fant ikke oppdraget. Kontroller ID og prøv igjen");
+            }
+        }
+        else
+        {
+            _view.ShowMessage("ID må være et heltall");
+        }
     }
 }
