@@ -22,7 +22,8 @@ undersøker oppgitte filer i henhold til oppgave.README og sjekker punktene:
 
 2. Red- kjør test og undersøk feil.
 * assert.single() feiler, Collection was empty.
-* uten å ha sjekket testen, så forventer vel testen at det skal være noe i sammlingen. jeg får
+* etter å ha sjekket koden ser det ut som at GetPending() returnerer en ny tom missionboard liste
+* de andre testene består da de har komlette metoder som skal testes, vi har ikke ferdigstilt GetPending() det mangler koden som skal gi det funksjonen vi er ute etter.
 
 
 ## Forsøk
