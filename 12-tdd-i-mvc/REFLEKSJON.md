@@ -20,7 +20,9 @@ undersøker oppgitte filer i henhold til oppgave.README og sjekker punktene:
 * Hvordan viser ShowTasks() en liste med oppdrag?
 * Hvor ligger menyteksten?
 
-
+2. Red- kjør test og undersøk feil.
+* assert.single() feiler, Collection was empty.
+* uten å ha sjekket testen, så forventer vel testen at det skal være noe i sammlingen. jeg får
 
 
 ## Forsøk
