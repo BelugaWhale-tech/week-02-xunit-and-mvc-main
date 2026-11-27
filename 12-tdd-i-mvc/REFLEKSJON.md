@@ -30,6 +30,8 @@ undersøker oppgitte filer i henhold til oppgave.README og sjekker punktene:
 
 Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ---|---|---|---
+|CreateNewMissionBoard_GetPendingReturnsNewList| lager nytt tomt MissionBoard. GetPending() skal returnere tom liste.| GetPending() retunrere med tom liste. 
+|CreatenewMissionBoard_AddTwoMissions_GetPendingReturnsListWithMissionsIncomplet| forventet at testen skal returnere liste med ufullførte oppdrag.| returnerer en tom liste. 
 
 ## Etterpå
 

@@ -1,3 +1,6 @@
+using System.Data.Common;
+using System.Text;
+
 namespace SpaceAcademy;
 
 public class MissionBoard
@@ -35,6 +38,15 @@ public class MissionBoard
     public List<MissionTask> GetPending()
     {
         // TODO: Skriv og kjør tester før du implementerer filteret.
-        return new List<MissionTask>();
+        var pendingComplete = new List<MissionTask>();
+        foreach (var pending in _tasks)
+        {
+            if (!pending.IsCompleted)
+            {
+                pendingComplete.Add(pending);
+            }
+        }
+        
+        return pendingComplete;
     }
 }
