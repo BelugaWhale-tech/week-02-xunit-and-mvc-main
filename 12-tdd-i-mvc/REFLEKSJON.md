@@ -36,6 +36,17 @@ Handling / testnavn | Forventet | Faktisk | Hva lærte jeg?
 ## Etterpå
 
 Hvilke filer endret jeg, og hvorfor?
+* endringer i MissionBoard for å filtrere. 
+* la til flere tester i ExcerciseTests. teste tom tavle, ufullført/fullført oppdrag, rekkefølge og at resultatlista er en kopi. 
+* MissionView, la til meny-valg 4
+* MissionController. koble meny- valg 4 til GetPending() og ShowTasks()
+
 
 Svar på refleksjonsspørsmålene:
+
+1. det har med ansvar å gjøre, _view skal bare vise og ikke endre. 
+2. for å holde orginalen i behold? om vi skulle ha behov for å hente dem senere så kan vi det. 
+3. godt spørsmål. 
+4. det var ikke nødvendig da vi er ute etter spesifikke tasks. 
+5. godt spørsmål.
 
