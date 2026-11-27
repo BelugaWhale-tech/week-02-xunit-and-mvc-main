@@ -44,9 +44,9 @@ Hvilke filer endret jeg, og hvorfor?
 
 Svar på refleksjonsspørsmålene:
 
-1. det har med ansvar å gjøre, _view skal bare vise og ikke endre. 
-2. for å holde orginalen i behold? om vi skulle ha behov for å hente dem senere så kan vi det. 
-3. godt spørsmål. 
-4. det var ikke nødvendig da vi er ute etter spesifikke tasks. 
-5. godt spørsmål.
+1. det har med ansvar å gjøre, _view skal bare vise og ikke endre. mens board har ansvaret for å finne ufullførte oppdrag.  
+2. for å holde orginalen i behold? om vi skulle ha behov for å hente dem senere så kan vi det. om vi gjør endringer i resultatlista så har vi fortsatt den orginale å se tilbake på om nødvendig. 
+3. GetPending() returnerer altid en tom liste. derfor består testen. 
+4. Showtasks() viser oss oppdragene, meny-valg 4 skal bare vise oss ufullførte oppdrag. Showtasks() kan vise oss hvilken som helst oppdragslite så trenger vi ikke en ny visningsmetode
+5. godt spørsmål. testene passerer når jeg fikset opp GetPending() siden testene passerer så betyr det jo at arbeidet som er gjort fungerer, selvom det også er mulig for tester å passere selvom funksjonaliteten ikke er der.. vanskelig spørsmål
 
