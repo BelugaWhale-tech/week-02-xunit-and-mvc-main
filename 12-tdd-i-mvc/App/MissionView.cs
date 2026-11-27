@@ -6,14 +6,12 @@ public class MissionView
 {
     public void ShowMenu()
     {
-        // TODO: Legg til menytekst for valg 4.
         Console.WriteLine("1. Legg til | 2. Vis alle | 3. Fullfør | 4. Vis ufullførte | 0. Avslutt");
     }
 
     public string ReadInput(string prompt)
     {
         Console.Write(prompt);
-        // EOF betyr avslutt. ?? velger høyresiden hvis ReadLine returnerer null.
         return Console.ReadLine() ?? "0";
     }
 

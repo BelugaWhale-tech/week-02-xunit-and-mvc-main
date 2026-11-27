@@ -37,7 +37,6 @@ public class MissionBoard
 
     public List<MissionTask> GetPending()
     {
-        // TODO: Skriv og kjør tester før du implementerer filteret.
         var pendingComplete = new List<MissionTask>();
         foreach (var pending in _tasks)
         {
